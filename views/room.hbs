@@ -7,20 +7,21 @@
     <div class="row">
         <h1>Node Chat チャットルーム</h1>
     </div>
-
-
-
     <div class="row">
-        <textarea id="msg" rows="4" class="" placeholder="投稿文を入力してください"></textarea>
+        ログインユーザ：{{userName}}さん
+        <input type="hidden" id="userName" value="{{userName}}" />
     </div>
     <div class="row">
-        <input type="button" id="write" value="投稿" class="">
-        <input type="button" id="memo" value="メモ" class="">
+        <textarea id="msg" rows="4" class="form-control" placeholder="投稿文を入力してください"></textarea>
+    </div>
+    <div class="row">
+        <input type="button" id="write" value="投稿" class="btn btn-info">
+        <input type="button" id="memo" value="メモ" class="btn btn-info">
     </div>
     <div class="row">
         <div id="thread"></div>
     </div>
     <div class="row" style="margin-top:20px;">
-        <input type="button" id="exit" value="退室する" class="">
+        <input type="button" id="exit" value="退室する" class="btn btn-info">
     </div>
 </form>

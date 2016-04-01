@@ -1,9 +1,11 @@
 'use strict';
 
 function checkUserName() {
-
-    // ユーザ名をチェックする
-
-
-    $('form').submit();
+　　var userName = $('input[name="userName"]').val();
+　　if (userName == '') {
+      alert('ユーザ名を入力してください');
+      return false;
+    } else {
+      $('form').submit();
+    }
 }
